@@ -1,0 +1,19 @@
+{
+  "name": "codecase",
+  "version": "1.0.0",
+  "description": "Showcase of the code",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "clear"
+  },
+  "author": "Rushil",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  }
+}
