@@ -2,9 +2,16 @@
   "name": "codecase",
   "version": "1.0.0",
   "description": "Showcase of the code",
-  "main": "index.ts",
+  "main": "./dist/index",
+  "types": "./dist/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -f dist",
+    "watch:build": "tsc --watch",
+    "watch:server": "nodemon './dist/index.js' --watch './dist'",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -14,6 +21,8 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.0.2"
+    "sass": "^1.61.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1"
   }
 }
